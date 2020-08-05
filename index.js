@@ -1,10 +1,10 @@
 let formData = {
-  dogName: "Byron",
-  dogBreed: "Poodle"
+  userName: "Byron",
+  userEmail: "Poodle"
 };
  
+// method: "POST" is missing from the object below
 let configObj = {
-  method: "POST",
   headers: {
     "Content-Type": "application/json",
     "Accept": "application/json"
@@ -18,4 +18,8 @@ fetch("http://localhost:3000/dogs", configObj)
   })
   .then(function(object) {
     console.log(object);
+  })
+  .catch(function(error) {
+    alert("Bad things! Ragnarők!");
+    console.log(error.message);
   });
