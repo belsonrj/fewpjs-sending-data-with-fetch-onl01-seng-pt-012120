@@ -4,7 +4,7 @@ let formData = {
 };
  
 // method: "POST" is missing from the object below
-let configObj = {
+let submitData = {
   headers: {
     "Content-Type": "application/json",
     "Accept": "application/json"
@@ -12,7 +12,7 @@ let configObj = {
   body: JSON.stringify(formData)
 };
  
-fetch("http://localhost:3000/dogs", configObj)
+fetch("http://localhost:3000/dogs", submitData)
   .then(function(response) {
     return response.json();
   })
