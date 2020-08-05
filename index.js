@@ -1,4 +1,4 @@
-configurationObject = {
+fetch("http://localhost:3000/dogs", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -8,4 +8,4 @@ configurationObject = {
     dogName: "Byron",
     dogBreed: "Poodle"
   })
-};
+});
